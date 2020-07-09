@@ -12,6 +12,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,7 +27,7 @@
     <div class="jumbotron text-center">
         <img src="img/niki.jpg" alt="" class="img-circle">
         <h1>Niki Dwijananto</h1>
-        <p>Backend Web Dev</p>
+        <span id="typed" style="font-size: 15px;"></span>
     </div>
     <!-- Akhir Jumbotron -->
 
@@ -173,3 +175,13 @@
 </body>
 
 </html>
+
+
+<script>
+    var typed = new Typed('#typed', {
+        strings: ["Im Full Stack Web Developer", "Sorry I mean ... ", 'Im Junior Web Developer'],
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true
+    });
+</script>
